@@ -1,0 +1,35 @@
+.menubar{
+  background-color: #244D7E;
+  display: flex;
+  align-content: stretch;
+}
+.menubar .logo{
+  height: 40px;
+  margin: 7px;
+}
+
+.menuOptionContainer{
+  display: flex;
+  align-content: stretch;
+  margin-left: auto;
+}
+.menubar .menuOption{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menubar li{
+  padding-left: 15px;
+  padding-right: 15px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.menubar li:hover, .menubar li.selected{
+  background-color: #407EC8;
+}
+
+.logoContainer{
+  display: flex;
+  align-items: center;
+}
