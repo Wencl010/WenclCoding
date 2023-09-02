@@ -19,11 +19,14 @@
   font-weight: bold;
 }
 .menubar li{
+  list-style-type: none;
+}
+.menubar a{
   padding-left: 15px;
   padding-right: 15px;
-  list-style-type: none;
   display: flex;
   align-items: center;
+  height: 100%;
 }
 .menubar li:hover, .menubar li.selected{
   background-color: #407EC8;

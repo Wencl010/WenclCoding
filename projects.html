@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <nav id="menuPlaceholder"></nav>
+        <div class="content">
+
+            <h2>Site under construction, check back soon!</h2>
+
+        </div>
+    </body>
+    <script src="./js/ajax-3.5.1-jquery.min.js"></script>
+
+    <script>
+        $("#menuPlaceholder").load("menu.html", ()=>{;
+            $("#menu-projects").addClass("selected");
+        });    
+    </script>
+</html>

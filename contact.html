@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <nav id="menuPlaceholder"></nav>
+        <div class="content">
+            <h2>Contact Info</h2>
+            <h3>Billy Wencl</h3>
+            <h3>Email: <a href="mailto:wencl010@umn.edu">wencl010@umn.edu</a></h3>
+            <h3>Phone: <a href="tel:507-720-7614">507-720-7614</a></h3>
+        </div>  
+    </body>
+    <script src="./js/ajax-3.5.1-jquery.min.js"></script>
+
+    <script>
+        $("#menuPlaceholder").load("menu.html", ()=>{;
+            $("#menu-contact").addClass("selected");
+        });    
+    </script>
+</html>

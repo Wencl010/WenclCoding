@@ -2,3 +2,83 @@ body{
   margin:0px;
   font-family:  Arial, Helvetica, sans-serif;
 }
+h1, h2, h3{
+  color: #244D7E;
+  text-align: center;
+}
+h1{
+  font-size: 46pt;
+}
+h2{
+  font-size: 22pt;
+}
+h3{
+  font-size: 13pt;
+  font-weight: bold;
+  margin: 5px
+}
+img{
+  width: 100%; 
+}
+.content{
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+
+.tile-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+  justify-content: center;
+}
+.tile{
+  background: #f2f2f2;
+  border-radius: 40px;
+  padding: 20px;
+  width:365px;
+/*   height: 180px; */
+  overflow: clip;
+  
+}
+.tile h2{
+  margin: 0px;
+  margin-bottom: 7px
+}
+.tile-content{
+  display: flex;
+  flex-flow: wrap;
+}
+.tile-content .tile-img{
+  width:25%;
+  min-width: 70px;
+}
+.tile-content .tile-title{
+  font-weight: bold;
+  font-size: 16pt;
+  width: 75%;
+  display: flex;
+  align-content: center;
+}
+.tile-content p{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.tile-content .tile-text{
+  text-align: left;
+  margin-top: 7px;
+  font-size: 13pt; 
+  width: 100%
+}
+.tile-content .tile-link{
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+  color: #244D7E;
+}
+a:hover{
+  text-decoration: underline;
+}

@@ -1,0 +1,31 @@
+.content .side-bar{
+  width: 25%;
+  margin-right: 20px;
+
+  margin-top: 20px;
+}
+.content .side-bar img{
+  border-radius: 50px;
+}
+
+.content{
+  display: flex;
+}
+
+.content .main-content{
+  width: 87%;
+  text-align: center;
+  
+}
+
+#education-tile .tile-text{
+  font-weight: bold;
+  font-size: 16pt;
+  text-align: center;  
+}
+#education-tile .tile-link{
+  font-size: 13pt
+}
+#education-tile .tile-title, #education-tile .tile-text{
+  line-height: 1.3;
+}
