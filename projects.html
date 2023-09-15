@@ -3,12 +3,13 @@
         <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
-        <nav id="menuPlaceholder"></nav>
+        <nav id="menuPlaceholder" class="menubar"></nav>
         <div class="content">
 
             <h2>Site under construction, check back soon!</h2>
 
         </div>
+        <footer id="footerPlaceholder"></footer>
     </body>
     <script src="./js/ajax-3.5.1-jquery.min.js"></script>
 
@@ -16,5 +17,6 @@
         $("#menuPlaceholder").load("menu.html", ()=>{;
             $("#menu-projects").addClass("selected");
         });    
+        $("#footerPlaceholder").load("footer.html");
     </script>
 </html>

@@ -1,14 +1,82 @@
 <html>
     <head>
         <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/aboutMe.css">
     </head>
     <body>
-        <nav id="menuPlaceholder"></nav>
+        <nav id="menuPlaceholder" class="menubar"></nav>
         <div class="content">
 
-            <h2>Site under construction, check back soon!</h2>
+            <div id="personal" class="section">
+                <h2>About Me</h2>
+                <div class="col2-cont">
+                    <div class="side-bar">
+                        <img src="./img/Tootsie_Kendall_Katwalk_Trail.jpg">
+                        <!--TODO add fancy zoom and crop instead of shrinking photo on resize-->
+                    </div>
+                    <div class="main-content">
+                        <p>
+                            My name is Billy Wencl. I live southern Minnesota with my wife Yana and our dog Tootsie. I recently graduated from the University of Minnesota and currently work in the Technology Department at Cleveland Public School. My favorite part about coding is puzzling out how to solve hard to fix problems. In my free time I enjoy hiking with my wife and dog, reading, and curling.   
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="experience" class="section">
+                <h2>Experience</h2>
+                <div class="col2-cont flip">
+                    <div class="side-bar">
+                        <img class="logo" src="./img/Cleveland District Icon_RGB.png">
+                    </div>
+                    <div class="main-content">
+                        <h3>Tech Department Programer - Cleveland Public School</h3>
+                        <h5>JULY - AUGUST 2018, JUNE - AUGUST 2019, JUNE 2020 - PRESENT</h5>
+                        <p>
+                            This role required strong time & workload management, as well as good communication & coding skills. A typical project was given to me as a broad idea, leaving me to pick out the project specifications and implement a solution. This position have involved developing styling standards and features for the school's website, creating and maintaining programs to automate workflows, and creating technical and user documentation for various systems. Some noteworthy projects are developing a staff-only webpage that harnesses APIs to centralize resources, designing the layout for and adding automation to the digital signage, implementing an open-source library software, and automating the synchronization of the school's sports system with Google Calendars. See <a href="./projects.html">Previous Work</a> for an indepth look at some of those projects.
+                        </p>
+                        <h4>Skills Used</h4>
+                        <ul>
+                            <li>REST APIs</li>
+                            <li>Time & Workload Management</li>
+                            <li>Google Apps Script</li>
+                            <li>Javascript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>SQL</li>
+                            <li>NodeJs</li>
+                            <li>System Design & Implementation</li>
+                            <li>Creating Technical & User Documentation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="education" class="section">
+                <h2>Education</h2>
+                <div class="col2-cont">
+                    <div class="side-bar">
+                        <img class="logo" src="./img/M2out-maroon-gold.png">
+                    </div>
+                    <div class="main-content">
+                        <h3>University of Minnesota - College of Science and Engineering</h3>
+                        <h5>Bachelor of Science in Computer Science with High Distinction</h5>
+                        <h5>SEPTEMBER 2019 - MAY 2023</h5>
+                        <h4>Relevant Coursework</h4>
+                        <ul>
+                            <li>Internet Programming</li>
+                            <li>Intro to Computer Networks</li>
+                            <li>Program Design & Development</li>
+                            <li>Practice of Database Systems</li>
+                            <li>Algorithms & Data Structures</li>
+                            <li>Operating Systems</li>
+                        </ul>
+                        <p style="text-indent: 0px;">
+                            Dean’s List Fall 2019, Spring 2020, Spring 2021, Fall 2021, Spring 2022, Fall 2022, & Spring 2023
+                         </p>
+                    </div>
+                </div>
+            </div>
 
         </div>
+        <footer id="footerPlaceholder"></footer>
     </body>
     <script src="./js/ajax-3.5.1-jquery.min.js"></script>
 
@@ -16,5 +84,6 @@
         $("#menuPlaceholder").load("menu.html", ()=>{;
             $("#menu-aboutMe").addClass("selected");
         });    
+        $("#footerPlaceholder").load("footer.html");
     </script>
 </html>

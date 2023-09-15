@@ -1,0 +1,22 @@
+p{
+    text-indent: 45px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+h2{
+    margin-bottom: 0px;
+}
+h3, h4, h5{
+    margin: 5px;
+    text-align: left;
+}
+.col2-cont .side-bar{
+    margin-top: 10px;
+}
+ul{
+    display: flex;
+    column-gap: 45px;
+    flex-wrap: wrap;
+}

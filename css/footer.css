@@ -1,0 +1,15 @@
+footer{
+    min-height: 90px;
+    background-color: #244D7E;
+    display: flex;
+    margin-top: auto;
+    flex-direction: row-reverse;
+}
+#footerLogo > img{
+    max-height: 40px;
+}
+#footerLogo {
+    display: flex;
+    align-items: center;
+}
+  

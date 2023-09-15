@@ -4,8 +4,8 @@
         <link rel="stylesheet" href="./css/index.css">
     </head>
     <body>
-        <nav id="menuPlaceholder"></nav>
-        <div class="content">
+        <nav id="menuPlaceholder" class="menubar"></nav>
+        <div class="content col2-cont">
             <div class="side-bar">
                 <img src="./img/Billy_YellowAsterButte.jpg">
             </div>
@@ -38,13 +38,14 @@
                             </div>
                             <div class="tile-text">
                                 Bachelor of Science<br/>Computer Science<br/>
-                                <a class="tile-link" href="./aboutMe.html#experience">More Course Details ></a>
+                                <a class="tile-link" href="./aboutMe.html#education">More Course Details ></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <footer id="footerPlaceholder"></footer>
     </body>
     <script src="./js/ajax-3.5.1-jquery.min.js"></script>
 
@@ -52,5 +53,6 @@
         $("#menuPlaceholder").load("menu.html", ()=>{;
             $("#menu-home").addClass("selected");
         });
+        $("#footerPlaceholder").load("footer.html");
     </script>
 </html>

@@ -3,13 +3,14 @@
         <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
-        <nav id="menuPlaceholder"></nav>
+        <nav id="menuPlaceholder" class="menubar"></nav>
         <div class="content">
             <h2>Contact Info</h2>
-            <h3>Billy Wencl</h3>
-            <h3>Email: <a href="mailto:wencl010@umn.edu">wencl010@umn.edu</a></h3>
-            <h3>Phone: <a href="tel:507-720-7614">507-720-7614</a></h3>
+            <h4>Billy Wencl</h4>
+            <h4>Email: <a href="mailto:wencl010@umn.edu">wencl010@umn.edu</a></h4>
+            <h4>Phone: <a href="tel:507-720-7614">507-720-7614</a></h4>
         </div>  
+        <footer id="footerPlaceholder"></footer>
     </body>
     <script src="./js/ajax-3.5.1-jquery.min.js"></script>
 
@@ -17,5 +18,6 @@
         $("#menuPlaceholder").load("menu.html", ()=>{;
             $("#menu-contact").addClass("selected");
         });    
+        $("#footerPlaceholder").load("footer.html");
     </script>
 </html>
