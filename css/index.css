@@ -9,3 +9,35 @@
 #education-tile .tile-title, #education-tile .tile-text{
   line-height: 1.3;
 }
+
+@media(max-width: 1575px) {
+  .col2-cont .side-bar{
+    width: 30%;
+  }
+  .col2-cont .main-content{
+    width: 70%;
+  }
+}
+@media(max-width: 1200px) {
+  .col2-cont .side-bar{
+    width: 40%;
+  }
+  .col2-cont .main-content{
+    width: 60%;
+  }
+}
+@media(max-width: 780px) {
+  .col2-cont .side-bar img{
+    border-radius: 20px;
+    content:url("../img/Billy_YellowAsterButte_Landscape.jpg");
+  }
+  .col2-cont{
+    flex-direction: column;
+  }
+  .col2-cont .side-bar{
+    width: 100%;
+  }
+  .col2-cont .main-content{
+    width: 100%;
+  }
+}
