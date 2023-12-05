@@ -3,11 +3,34 @@
     <div class="logoContainer">
         <img class="logo" src="./img/BW Logo White.png" />
     </div>
-
-    <div class="menuOptionContainer">
+    <div id="mobileButton" class="mobile-menu" onclick="toggleMenu(event)">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="menuOptionContainer" id="menuCont">
         <li id="menu-home"><a href="./index.html" class="menuOption">Home</a></li>
         <li id="menu-aboutMe"><a href="./aboutMe.html" class="menuOption">About Me</a></li>
         <li id="menu-projects"><a href="./projects.html" class="menuOption">Previous Work</a></li>
         <li id="menu-contact"><a href="./contact.html" class="menuOption">Contact</a></li>
     </div>
+    <script>
+        function toggleMenu(event){
+            event.stopPropagation();
+
+            let menu = document.getElementById("menuCont");
+            let menuButton = document.getElementById("mobileButton");
+
+            if(menu.classList.contains("show")){
+                menu.classList.remove("show");
+                menuButton.classList.remove("open");
+                window.removeEventListener('click', toggleMenu);
+            }
+            else{
+                menu.classList.add("show");
+                menuButton.classList.add("open");
+                window.addEventListener('click', toggleMenu);
+            }
+        }
+    </script>
 </html>
