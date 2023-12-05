@@ -6,7 +6,8 @@ footer{
     flex-direction: row-reverse;
 }
 #footerLogo > img{
-    max-height: 40px;
+    height: 40px;
+    margin: 7px;
 }
 #footerLogo {
     display: flex;
