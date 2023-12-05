@@ -10,20 +10,25 @@
   line-height: 1.3;
 }
 
-@media(max-width: 1575px) {
+@media(max-width: 1695px) {
   .col2-cont .side-bar{
     width: 30%;
   }
   .col2-cont .main-content{
-    width: 70%;
+    width: calc(70% - 20px);
   }
 }
-@media(max-width: 1200px) {
+@media(max-width: 1315px) {
   .col2-cont .side-bar{
     width: 40%;
   }
   .col2-cont .main-content{
-    width: 60%;
+    width: calc(60% - 20px);
+  }
+}
+@media (max-width:1000px) {
+  h1{
+    font-size: 35pt;
   }
 }
 @media(max-width: 780px) {

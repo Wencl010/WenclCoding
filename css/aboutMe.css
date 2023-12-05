@@ -20,3 +20,52 @@ ul{
     column-gap: 45px;
     flex-wrap: wrap;
 }
+
+#personal .side-bar{
+    border-radius: 50px;
+    overflow: clip;
+    display: flex;
+    justify-content: center;
+
+    height: 300px;
+    min-width: 120px;
+}
+
+#personal .side-bar img{
+    height: 300px;
+    border-radius: unset;
+    width: unset;
+}
+
+@media(max-width: 900px) {
+    #personal .side-bar {
+        height: 200px;
+        align-items: center;
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .col2-cont.flip, .col2-cont {
+        flex-direction: column;
+    }
+    .col2-cont .side-bar img{
+        width: unset;
+        height: 150px;
+    }        
+    .col2-cont .side-bar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: clip;
+        height: 150px;
+        order: 1;
+    }
+    .col2-cont>h2{
+        order: 2;
+    }
+    .col2-cont .main-content{
+        width: 100%;
+        order: 3;
+    }
+    
+}

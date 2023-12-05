@@ -99,9 +99,8 @@ a:hover{
 }
 
 .col2-cont .side-bar{
-  width: 25%;
+  width: 20%;
   margin-right: 20px;
-
   margin-top: 20px;
 }
 .col2-cont .side-bar img{
@@ -113,14 +112,19 @@ a:hover{
 
 .col2-cont{
   display: flex;
+  flex-wrap: wrap;
 }
+
+.col2-cont>h2{
+  width: 100%;
+} 
 
 .col2-cont.flip{
   flex-direction: row-reverse;
 }
 
 .col2-cont .main-content{
-  width: 87%;
+  width: calc(80% - 20px);
   text-align: center;
 }
 
@@ -129,4 +133,11 @@ a:hover{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
+}
+
+@media (max-width:525px){
+  .content{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
