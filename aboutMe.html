@@ -1,9 +1,15 @@
 <html>
     <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="./css/3.4.1-bootstrap.min.css"> -->
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/aboutMe.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Me | Billy Wencl</title>
+        
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
     </head>
     <body>
         <nav id="menuPlaceholder" class="menubar"></nav>
@@ -19,6 +25,30 @@
                         <p>
                             My name is Billy Wencl. I live southern Minnesota with my wife Yana and our dog Tootsie. I recently graduated from the University of Minnesota and currently work in the Technology Department at Cleveland Public School. My favorite part about coding is puzzling through difficult problems. In my free time I enjoy hiking, reading, and curling. The picture of Tootsie, taken on a piece of the Pacific Crest Trail, is from the trip that my wife and I took after graduating this past spring. We spent two months driving all over the west coast hiking everywhere from Sequoia National Forest to Mt. Baker-Snoqualmie National Forest.
                         </p>
+                        <p id="dropDownBlock_00" style="display: none">
+                            <script>
+                              /* Stores the link, name and type of entry. It can take as many as needed,
+                              * But should be kept to under 10 to avoid slowing down the site. The order
+                              * of the dropdown is determined by the order in the list
+                              * @param link - The link to the pdf, site, or email.
+                              * @param displayName - The text the dropdown will display
+                              * @param type - either "pdf", "link", or "email" othervalues will not display
+                              * Ex:
+                              * {link:"https://5il.co/kez9", displayName:"SAC Handbook", type:"pdf"},
+                              * {link:"https://isd391.org/", displayName:"Home", type:"link"}
+                              */
+                              var uncollapsedPDF = false;//Mark true for pds to be auto expanded 
+                              var twoColumn = false; //Controls whether the dropdowns appear in one or two columns
+                              var subFolders = false; //Only enable on pages that need subfolders
+                              var centered = false; //Centers the dropdowns, if twoColumn is off
+                          
+                              var items = [ //items is a list that holds the entries
+                                {link:"./resume_Billy_Wencl.pdf", displayName:"Resume", type:"pdf", folderName:""},
+                              ];
+                            </script>
+                          </p>
+                          <script src="./js/dropdown.js" data-idNumber="00"></script>
+                          
                     </div>
                 </div>
             </div>
@@ -80,6 +110,7 @@
         <footer id="footerPlaceholder"></footer>
     </body>
     <script src="./js/ajax-3.5.1-jquery.min.js"></script>
+    <script src="./js/3.4.1-bootstrap.min.js"></script>
 
     <script>
         $("#menuPlaceholder").load("menu.html", ()=>{;

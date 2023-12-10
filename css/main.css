@@ -69,7 +69,6 @@ img{
 .tile-content .tile-img{
   width:25%;
   min-width: 70px;
-  border-radius: 20px;
   overflow: clip;
 }
 .tile-content .tile-title{
@@ -140,4 +139,26 @@ a:hover{
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+
+p a::after{
+  margin-left: 2px;
+  content:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' fill='%23244D7E' stroke='%23244d73' stroke-width='0.5' class='bi bi-box-arrow-up-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z'/%3E%3C/svg%3E");
+}
+
+.panel-group a::after{
+  content: none;
+}
+
+.panel-title {
+  color: #244d7e;
+}
+.panel, .panel-default {
+  border-color: #6e89a9;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body{
+  border-top-color: #6e89a9;
+}
+.panel-heading{
+  border-radius: 3px;
 }

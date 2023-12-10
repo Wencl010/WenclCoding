@@ -3,7 +3,7 @@ footer{
     background-color: #244D7E;
     display: flex;
     margin-top: auto;
-    flex-direction: row-reverse;
+    justify-content: right;
 }
 #footerLogo > img{
     height: 40px;
@@ -13,4 +13,35 @@ footer{
     display: flex;
     align-items: center;
 }
-  
+
+.socialLink img{
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.socialLink{
+    margin-top: 7px;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.socialLink:hover{
+    background-color: #4F4F4F;
+}
+
+#social{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.socialLink a {
+    color: #fff;
+    font-size: 7.5pt;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
