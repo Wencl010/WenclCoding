@@ -156,7 +156,7 @@ function generateDropDown(item, id = 'Outer', classVar = ""){
       '" data-toggle="collapse" data-target="#scriptIn' + collapse + '" onclick="loadIframe(&apos;frame' + collapse + '&apos;)"><h4 class="panel-title">' +
           '<a data-parent="#accordion'+id+'" class="collapsible-item-title-link-icon pull-right" data-toggle="collapse"' +
           'href="#scriptIn' + collapse + '" role="button"><img class="dropDownArrow" alt="Download" src="./img/dropDownArrow.svg"></a><a data-parent="#accordion'+id+'' +
-          '" data-toggle="collapse" href="#scriptIn' + collapse + '" class="dropDown">' + item.displayName + '</a><a href="' + item.link + '" download>' +
+          '" data-toggle="collapse" href="#scriptIn' + collapse + '" class="dropDown">' + item.displayName + '</a><a href="' + item.link + '" download onclick="event.stopPropagation()">' +
           '<img class="content-download" alt="Download" src="./img/downloadIcon.png" style="height:19px; margin:0px 0px 2px 5px; width:15px;" />' +
           '</a></h4></div><div class="collapse '+classVar+' panel-collapse" id="scriptIn' + collapse + '"> <div class="panel-body"><div' +
           '><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 120%;">' +
@@ -169,7 +169,7 @@ function generateDropDown(item, id = 'Outer', classVar = ""){
       '" data-toggle="collapse" data-target="#scriptIn' + collapse + '" onclick="loadIframe(&apos;frame' + collapse + '&apos;)"><h4 class="panel-title">' +
           '<a data-parent="#accordion'+id+'" class="collapsible-item-title-link-icon pull-right" data-toggle="collapse"' +
           'href="#scriptIn' + collapse + '" role="button"><img class="dropDownArrow" alt="Download" src="./img/dropDownArrow.svg"></a><a data-parent="#accordion'+id+'' +
-          '" data-toggle="collapse" href="#scriptIn' + collapse + '" class="dropDown">' + item.displayName + '</a><a href="' + item.link + '" target="_blank" download>' +
+          '" data-toggle="collapse" href="#scriptIn' + collapse + '" class="dropDown">' + item.displayName + '</a><a href="' + item.link + '" target="_blank" download onclick="event.stopPropagation()">' +
           '<img class="content-download" alt="Download" src="./img/downloadIcon.png" style="height:19px; margin:0px 0px 2px 5px; width:15px;" />' +
           '</a></h4></div><div class="collapse '+classVar+' panel-collapse" id="scriptIn' + collapse + '"> <div class="panel-body"><div>' +
           '<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 120%;"><iframe id="frame' + collapse + '" allowfullscreen="" data-src="' + item.link +
@@ -178,7 +178,7 @@ function generateDropDown(item, id = 'Outer', classVar = ""){
     else if(screen.width < 500 && single)
     {
       htmlSingle += '<div class="panel panel-default"><div class="panel-heading"><h4 class="panel-title">' +
-          '<a class="dropDown">' + item.displayName + '</a><a href="' + item.link + '" download>' +
+          '<a class="dropDown">' + item.displayName + '</a><a href="' + item.link + '" download onclick="event.stopPropagation()">' +
           '<img class="content-download" alt="Download" src="./img/downloadIcon.png" style="height:19px; margin:0px 0px 2px 5px; width:15px;" />' +
           '</a></h4></div><div class="collapse panel-collapse in"> <div class="panel-body"><div' +
           '><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 120%;">' +
