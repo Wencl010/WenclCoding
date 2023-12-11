@@ -80,6 +80,10 @@
   .panel-group a::after{
     content: none;
   }
+
+  .panel-group a:hover{
+    text-decoration: none;
+  }
   
   .panel-title {
     color: #244d7e;
@@ -94,8 +98,12 @@
     border-radius: 3px;
   }
 
+  .panel-heading:hover{
+    box-shadow: 0 0 6px #244d7e !important;
+  }
+
   .dropDownArrow {
-    width: 28px;
+    width: 23px;
     margin-top: auto;
     margin-bottom: auto;
   }
