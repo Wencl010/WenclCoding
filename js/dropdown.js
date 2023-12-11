@@ -152,10 +152,10 @@ function generateDropDown(item, id = 'Outer', classVar = ""){
   {
     if(screen.width < 500 && !single)
     {
-      htmlSingle += '<div class="panel panel-default"><div class="panel-heading" data-parent="#accordion'+id+'' +
+      htmlSingle += '<div class="panel panel-default"><div class="panel-heading collapsed" data-parent="#accordion'+id+'' +
       '" data-toggle="collapse" data-target="#scriptIn' + collapse + '" onclick="loadIframe(&apos;frame' + collapse + '&apos;)"><h4 class="panel-title">' +
           '<a data-parent="#accordion'+id+'" class="collapsible-item-title-link-icon pull-right" data-toggle="collapse"' +
-          'href="#scriptIn' + collapse + '" role="button"><span class="glyphicon glyphicon-chevron-down"></span></a><a data-parent="#accordion'+id+'' +
+          'href="#scriptIn' + collapse + '" role="button"><img class="dropDownArrow" alt="Download" src="./img/dropDownArrow.svg"></a><a data-parent="#accordion'+id+'' +
           '" data-toggle="collapse" href="#scriptIn' + collapse + '" class="dropDown">' + item.displayName + '</a><a href="' + item.link + '" download>' +
           '<img class="content-download" alt="Download" src="./img/downloadIcon.png" style="height:19px; margin:0px 0px 2px 5px; width:15px;" />' +
           '</a></h4></div><div class="collapse '+classVar+' panel-collapse" id="scriptIn' + collapse + '"> <div class="panel-body"><div' +
@@ -165,10 +165,10 @@ function generateDropDown(item, id = 'Outer', classVar = ""){
     }
     else if(screen.width >= 500 && !single)
     {
-      htmlSingle += '<div class="panel panel-default"><div class="panel-heading"data-parent="#accordion'+id+'' +
+      htmlSingle += '<div class="panel panel-default"><div class="panel-heading collapsed"data-parent="#accordion'+id+'' +
       '" data-toggle="collapse" data-target="#scriptIn' + collapse + '" onclick="loadIframe(&apos;frame' + collapse + '&apos;)"><h4 class="panel-title">' +
           '<a data-parent="#accordion'+id+'" class="collapsible-item-title-link-icon pull-right" data-toggle="collapse"' +
-          'href="#scriptIn' + collapse + '" role="button"><span class="glyphicon glyphicon-chevron-down"></span></a><a data-parent="#accordion'+id+'' +
+          'href="#scriptIn' + collapse + '" role="button"><img class="dropDownArrow" alt="Download" src="./img/dropDownArrow.svg"></a><a data-parent="#accordion'+id+'' +
           '" data-toggle="collapse" href="#scriptIn' + collapse + '" class="dropDown">' + item.displayName + '</a><a href="' + item.link + '" target="_blank" download>' +
           '<img class="content-download" alt="Download" src="./img/downloadIcon.png" style="height:19px; margin:0px 0px 2px 5px; width:15px;" />' +
           '</a></h4></div><div class="collapse '+classVar+' panel-collapse" id="scriptIn' + collapse + '"> <div class="panel-body"><div>' +
@@ -384,10 +384,10 @@ function generateSubFolder()
 
       if((folderName != "" && folderName.toLowerCase() != "main"))
       {
-        subFoldHtml += '<div class="panel panel-default panel-folder"><div class="panel-heading" data-toggle="collapse" data-parent="#accordionOuter"'+
+        subFoldHtml += '<div class="panel panel-default panel-folder"><div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordionOuter"'+
         ' href="#collapseFolder' + collapse + '" ><h4 class="panel-title">' +
               '<a class="collapsible-item-title-link-icon pull-right" data-toggle="collapse" data-parent="#accordionOuter"'+
-              ' href="#collapseFolder' + collapse + '" role="button"><span class="glyphicon glyphicon-chevron-down"></span></a>' +
+              ' href="#collapseFolder' + collapse + '" role="button"><img class="dropDownArrow" alt="Download" src="./img/dropDownArrow.svg"></a>' +
               '<a data-parent="#accordionOuter" data-toggle="collapse" href="#collapseFolder' + collapse + '" class="dropDown">' +
               folderName + '</a></h4></div><div class="collapse collapse-folderLevel panel-collapse" id="collapseFolder' + collapse + '">' +
               '<div class="panel-body"><div class="panel-group" id="accordionInner'+ collapse+'">';
