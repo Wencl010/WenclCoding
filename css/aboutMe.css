@@ -21,7 +21,7 @@ ul{
     flex-wrap: wrap;
 }
 
-#personal .side-bar{
+/* #personal .side-bar{
     border-radius: 50px;
     overflow: clip;
     display: flex;
@@ -35,17 +35,17 @@ ul{
     height: 300px;
     border-radius: unset;
     width: unset;
-}
+} */
 
 
-@media(max-width: 900px) {
-    #personal .side-bar {
+@media(max-width: 1040px) {
+    /* #personal .side-bar {
         height: 200px;
         align-items: center;
         max-width: fit-content;
         margin-left: auto;
         margin-right: auto;
-    }
+    } */
     .col2-cont.flip, .col2-cont {
         flex-direction: column;
     }
@@ -57,8 +57,8 @@ ul{
         width: 100%;
         display: flex;
         justify-content: center;
-        overflow: clip;
-        height: 150px;
+        /* overflow: clip;
+        height: 150px;*/
         order: 1;
     }
     .col2-cont>h2{
@@ -68,5 +68,12 @@ ul{
         width: 100%;
         order: 3;
     }
+
+    #personal .col2-cont .side-bar img{
+        border-radius: 20px;
+        content:url("../img/Billy_YellowAsterButte_Landscape.jpg");
+        width: 95%;
+        height: auto;
+    }      
     
 }

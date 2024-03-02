@@ -34,16 +34,20 @@
     font-size: 35pt;
   }
 }
-@media(max-width: 780px) {
+@media(max-width: 825px) {
   .col2-cont .side-bar img{
-    border-radius: 20px;
-    content:url("../img/Billy_YellowAsterButte_Landscape.jpg");
+    border-radius: 175px;
+    width:350px;
+    max-width:65%;
+    content:url("../img/Professional_Headshot_Square.jpg");
   }
   .col2-cont{
     flex-direction: column;
   }
   .col2-cont .side-bar{
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .col2-cont .main-content{
     width: 100%;
